@@ -3,5 +3,5 @@ comment0.target=raumschiff
 comment0.text=\r\n\ //raumschiff\ actor\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ public\ void\ links()\ {\r\n\ \r\n\ //hier\ kommt\ der\ code\ rein\r\n\ //hier\ ist\ ein\ bisschen\ mehr\ code\r\n\ \r\n\ }\r\n
+comment1.text=\r\n\ public\ void\ links()\ {\r\n\ \r\n\ //hier\ kommt\ der\ code\ rein\r\n\ \r\n\ //code\ f\u00FCrn\ raumschiff\r\n\ \r\n\ }\r\n
 numComments=2

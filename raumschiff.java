@@ -13,7 +13,8 @@ public class raumschiff extends Actor
      * public void links() {
      * 
      * //hier kommt der code rein
-     * //hier ist ein bisschen mehr code
+     * 
+     * //code fürn raumschiff
      * 
      * }
      */
