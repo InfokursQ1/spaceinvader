@@ -15,6 +15,7 @@ public class raumschiff extends Actor
      * //hier kommt der code rein
      * 
      * //code fürn raumschiff
+     * //eine zeile
      * 
      * }
      */
