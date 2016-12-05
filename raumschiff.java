@@ -10,6 +10,14 @@ public class raumschiff extends Actor
 {
 
     /**
+     * 
+     */
+    public raumschiff()
+    {
+        setImage("Raumschiff.png");
+    }
+
+    /**
      * public void links() {
      * 
      * //hier kommt der code rein
@@ -20,6 +28,13 @@ public class raumschiff extends Actor
      * }
      */
     public void act()
+    {
+    }
+
+    /**
+     * 
+     */
+    public void addedToWorld()
     {
     }
 }

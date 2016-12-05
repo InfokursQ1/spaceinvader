@@ -8,7 +8,16 @@
     </imports>
     <implements/>
     <fields/>
-    <constructors/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setImage(&quot;Raumschiff.png&quot;)" expression-java="setImage(&quot;Raumschiff.png&quot;)" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
     <methods>
         <method access="public" type="void" name="act" enable="true">
             <javadoc xml:space="preserve">public void links() {
@@ -20,6 +29,12 @@
 
 }
 </javadoc>
+            <params/>
+            <throws/>
+            <body/>
+        </method>
+        <method access="public" type="void" name="addedToWorld" enable="true">
+            <javadoc xml:space="preserve"/>
             <params/>
             <throws/>
             <body/>
