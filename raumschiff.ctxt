@@ -1,13 +1,5 @@
 #BlueJ class context
 comment0.target=raumschiff
-comment0.text=\r\n\ //raumschiff\ actor\r\n
 comment1.params=
 comment1.target=raumschiff()
-comment1.text=\r\n\ \r\n
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ public\ void\ links()\ {\r\n\ \r\n\ //hier\ kommt\ der\ code\ rein\r\n\ \r\n\ //code\ f\u00FCrn\ raumschiff\r\n\ //eine\ zeile\r\n\ \r\n\ }\r\n
-comment3.params=
-comment3.target=void\ addedToWorld()
-comment3.text=\r\n\ \r\n
-numComments=4
+numComments=2
