@@ -9,17 +9,25 @@ public class Steuerung extends Actor
     MouseInfo MI;
     raumschiff Enterprise = new raumschiff();
     Bullet meineKugel;
+    boolean Freigabe=true;
+    int z = 5;
     public void act()
     {
         MI=Greenfoot.getMouseInfo();
         if (MI!=null)
         {
             Enterprise.setLocation(MI.getX(),363);
-            if (MI.getButton()==1)
+            if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
+                z= 5;
+                Freigabe = false;
             }
         } 
+        z--;
+        if (z<0) {
+            Freigabe = true;
+        }
     }
     public void addedToWorld(World w)
     {
@@ -28,10 +36,10 @@ public class Steuerung extends Actor
     }
     public void shoot()
     {
-      meineKugel = new Bullet();
-      meineWelt.addObject(meineKugel,Enterprise.getX(),363);
-      
-      
+      if (Freigabe== true) {
+              meineKugel = new Bullet();
+              meineWelt.addObject(meineKugel,Enterprise.getX(),363);
+        }
     }
     
 } 
