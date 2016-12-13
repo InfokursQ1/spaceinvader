@@ -10,17 +10,17 @@ public class Steuerung extends Actor
     raumschiff Enterprise = new raumschiff();
     Bullet meineKugel;
     boolean Freigabe=true;
-    int z = 5;
+    int z = 6;
     public void act()
     {
         MI=Greenfoot.getMouseInfo();
         if (MI!=null)
         {
-            Enterprise.setLocation(MI.getX(),363);
+            Enterprise.setLocation(MI.getX(),560);
             if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
-                z= 5;
+                z= 6;
                 Freigabe = false;
             }
         } 
@@ -38,7 +38,7 @@ public class Steuerung extends Actor
     {
       if (Freigabe== true) {
               meineKugel = new Bullet();
-              meineWelt.addObject(meineKugel,Enterprise.getX(),363);
+              meineWelt.addObject(meineKugel,Enterprise.getX(),570);
         }
     }
     

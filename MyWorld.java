@@ -13,7 +13,7 @@ public class MyWorld extends World
      */
     public MyWorld()
     {
-        super(600, 400, 1);
+        super(800, 600, 1);
         addObject(meineSteuerung,0,0);
     }
 }
