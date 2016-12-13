@@ -14,6 +14,7 @@ public class MyWorld extends World
     public MyWorld()
     {
         super(800, 600, 1);
+        setBackground("Mars.png");
         addObject(meineSteuerung,0,0);
     }
 }

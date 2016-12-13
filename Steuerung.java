@@ -8,6 +8,7 @@ public class Steuerung extends Actor
     World meineWelt;
     MouseInfo MI;
     raumschiff Enterprise = new raumschiff();
+    gegner Invader = new gegner();
     Bullet meineKugel;
     boolean Freigabe=true;
     int z = 6;
@@ -28,10 +29,12 @@ public class Steuerung extends Actor
         if (z<0) {
             Freigabe = true;
         }
+
     }
     public void addedToWorld(World w)
     {
         w.addObject(Enterprise,300,363);
+        w.addObject(Invader,100,100);
         meineWelt=w;
     }
     public void shoot()
