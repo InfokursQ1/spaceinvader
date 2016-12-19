@@ -16,6 +16,10 @@ dependency3.type=UsesDependency
 dependency4.from=Steuerung
 dependency4.to=gegner
 dependency4.type=UsesDependency
+
+dependency5.from=Bullet
+dependency5.to=gegner
+dependency5.type=UsesDependency
 editor.fx.0.height=700
 editor.fx.0.width=700
 editor.fx.0.x=0

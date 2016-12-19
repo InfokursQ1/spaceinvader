@@ -21,6 +21,7 @@ public class Steuerung extends Actor
             if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
+
                 z= 26;
                 Freigabe = false;
             }
