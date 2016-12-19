@@ -11,7 +11,7 @@ public class Steuerung extends Actor
     gegner Invader = new gegner();
     Bullet meineKugel;
     boolean Freigabe=true;
-    int z = 6;
+    int z = 16;
     public void act()
     {
         MI=Greenfoot.getMouseInfo();
@@ -21,7 +21,7 @@ public class Steuerung extends Actor
             if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
-                z= 6;
+                z= 16;
                 Freigabe = false;
             }
         } 
