@@ -11,9 +11,10 @@ public class Steuerung extends Actor
     gegner [] Invader = new gegner[20];
     Bullet meineKugel;
     boolean Freigabe=true;
-    int z = 26;
+    int z = 800;
     public void act()
     {
+        
         MI=Greenfoot.getMouseInfo();
         if (MI!=null)
         {
@@ -21,15 +22,15 @@ public class Steuerung extends Actor
             if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
-                z= 26;
+                z= 800;
                 Freigabe = false;
             }
-        } 
+         
         z--;
-        if (z<0) {
+        if (MI.getButton()==0) {
             Freigabe = true;
         }
-
+        }
     }
     public void addedToWorld(World w)
     {
