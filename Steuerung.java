@@ -8,12 +8,13 @@ public class Steuerung extends Actor
     World meineWelt;
     MouseInfo MI;
     raumschiff Enterprise = new raumschiff();
-    gegner [] Invader = new gegner[20];
+    gegner Invader = new gegner();
     Bullet meineKugel;
     boolean Freigabe=true;
-    int z = 26;
+    int z = 800;
     public void act()
     {
+        
         MI=Greenfoot.getMouseInfo();
         if (MI!=null)
         {
@@ -21,34 +22,20 @@ public class Steuerung extends Actor
             if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
-                z= 26;
+                z= 800;
                 Freigabe = false;
             }
-        } 
+         
         z--;
-        if (z<0) {
+        if (MI.getButton()==0) {
             Freigabe = true;
         }
-
+        }
     }
     public void addedToWorld(World w)
     {
         w.addObject(Enterprise,300,363);
-        for(int i=0;i<14;i++)
-        {
-         Invader[i]= new gegner();
-         w.addObject(Invader[i],i*50+50,70);
-        }
-        for(int i=0;i<14;i++)
-        {
-         Invader[i]= new gegner();
-         w.addObject(Invader[i],i*50+50,140);
-        }
-        for(int i=0;i<14;i++)
-        {
-         Invader[i]= new gegner();
-         w.addObject(Invader[i],i*50+50,210);
-        }
+        w.addObject(Invader,100,100);
         meineWelt=w;
     }
     public void shoot()
