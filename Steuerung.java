@@ -12,28 +12,34 @@ public class Steuerung extends Actor
     Bullet meineKugel;
     boolean Freigabe=true;
     int z = 800;
+    int Score=0;
+    ScoreBoard sb;
     public void act()
     {
         
         MI=Greenfoot.getMouseInfo();
         if (MI!=null)
         {
-            Enterprise.setLocation(MI.getX(),560);
-            if ((MI.getButton()==1)&&(Freigabe== true))
+           Enterprise.setLocation(MI.getX(),560);
+           if ((MI.getButton()==1)&&(Freigabe== true))
             {
                 shoot();
                 z= 800;
                 Freigabe = false;
             }
-         
-        z--;
-        if (MI.getButton()==0) {
+           z--;
+           if (MI.getButton()==0) 
+           {
             Freigabe = true;
-        }
+           }
         }
     }
     public void addedToWorld(World w)
     {
+        sb=new ScoreBoard();
+        w.addObject(sb,0,0);
+        
+        
         w.addObject(Enterprise,300,363);
         for(int i=0;i<14;i++)
         {
@@ -55,7 +61,7 @@ public class Steuerung extends Actor
     public void shoot()
     {
       if (Freigabe== true) {
-              meineKugel = new Bullet();
+              meineKugel = new Bullet(sb);
               meineWelt.addObject(meineKugel,Enterprise.getX(),570);
         }
     }

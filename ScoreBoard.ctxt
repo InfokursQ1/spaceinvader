@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ScoreBoard
+comment1.params=w
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment2.params=p
+comment2.target=void\ scoren(int)
+comment3.params=
+comment3.target=void\ anzeigen()
+comment4.params=
+comment4.target=void\ ZiffernBerechnen()
+numComments=5
