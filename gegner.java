@@ -6,7 +6,7 @@ public class gegner extends Actor
 {
   double lebenspunkte=1;
   int Zähler = 80;
-  int z =600;
+  int z = 600;
   int dy=1;
   public gegner()
     {
@@ -22,8 +22,8 @@ public class gegner extends Actor
         setLocation(getX()+dy,getY());
         Zähler--;
     
-            if(Zähler==0)   
-            {
+        if(Zähler==0)   
+        {
             Zähler=80;
             dy=-dy;
             setLocation(getX(),getY()+5);

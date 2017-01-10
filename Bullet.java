@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Bullet extends Actor
 {
-    int z = 10000;
+    int z = 180;
     ScoreBoard sb;
     public Bullet(ScoreBoard s)
     {
@@ -14,7 +14,7 @@ public class Bullet extends Actor
         z--;
         if (z==0) 
         {
-          setLocation(getX(),getY()-15);
+          setLocation(getX(),getY()-1);
           if (getY()==0) {
             getWorld().removeObject(this);
             
@@ -30,7 +30,7 @@ public class Bullet extends Actor
             getWorld().removeObject(g);
             getWorld().removeObject(this);
            } 
-           z = 10000;
+           z = 180;
         }
  
     }  
